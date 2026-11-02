@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<!-- saved from url=(0043)https://alin-tech-maker.github.io/0321.html -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="renderer" content="webkit"><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><title>
+	北京市旅游公共信息和咨询平台 - 电子行程单（预约）系统
+</title><meta name="Keywords" content="北京市旅游委,北京市旅游团队服务管理系统,旅游团队,旅游团队服务,电子行程单,北京市旅游公共信息和咨询平台"><meta name="Description" content="本系统是对北京地区旅游团队电子行程单业务的管理平台，提供旅游团队填报、天安门广场团队预约、信息浏览查询、电子行程单生成等功能。包括出境游、入境游、本市一日游、国内游接待服务等各项业务管理功能。 北京市旅游委 北京市旅游公共信息和咨询平台">
+    <!--[if lte IE 8]>
+        <script src="../assets2/js/html5shiv.min.js"></script>
+		    <script src="../assets2/js/respond.min.js"></script>
+		<![endif]-->
+    <link href="./0321_files/bootstrap.min.css" rel="stylesheet"><link href="./0321_files/ace.min.css" rel="stylesheet"><link href="./0321_files/animate.css" rel="stylesheet"><link href="./0321_files/font-awesome.min.css" rel="stylesheet"><link href="./0321_files/bootstrap-table.min.css" rel="stylesheet"><link href="./0321_files/blue.css" rel="stylesheet"><link href="./0321_files/select2.min.css" rel="stylesheet"><link href="./0321_files/custom.css" rel="stylesheet">
+    <!--[if !IE]>-->
+    <script src="./0321_files/jquery-2.2.4.min.js.下载"></script>
+    <!--<![endif]-->
+    <!--[if IE]>
+        <script src="../assets2/js/jquery-1.11.3.min.js"></script>
+    <![endif]-->
+    <script src="./0321_files/bootstrap.min.js.下载"></script>
+    <script src="./0321_files/bootstrap-table.min.js.下载"></script>
+    <script src="./0321_files/bootstrap-table-zh-CN.min.js.下载"></script>
+    <script src="./0321_files/layer.js.下载"></script>
+    <script src="./0321_files/laydate.js.下载"></script>
+    <script src="./0321_files/server.js.下载"></script>
+    <script src="./0321_files/public.js.下载"></script>
+        <script src="./0321_files/server.js.下载"></script>
+    
+    </head>
+<body class="bg-eaeff6">
+    <form name="aspnetForm" method="post" action="https://alin-tech-maker.github.io/see_groupno.aspx?groupno=L-BJ03969-lcm-0321&amp;lxs_lincen=1" id="aspnetForm" onkeydown="if(event.keyCode==13)return false;">
+<div>
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="./0321_files/WebResource.axd" type="text/javascript"></script>
+
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="1F7C7530">
+	<input type="hidden" name="__SCROLLPOSITIONX" id="__SCROLLPOSITIONX" value="0">
+	<input type="hidden" name="__SCROLLPOSITIONY" id="__SCROLLPOSITIONY" value="0">
+	<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+	<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+</div>
+        
+
+
+    <div class="contect_area" style="height: auto;">
+        <br>
+        <span id="xg_demo"></span>
+        <div class="captiontitle" id="Print_area" style="text-align: center;">
+            <style>
+                .A4_page {
+                    background-color: White;
+                    width: 800px;
+                    display: inline-block;
+                }
+
+                .zm_tab {
+                    width: 99%;
+                    background-color: White;
+                    text-align: left;
+                }
+
+                    .zm_tab td {
+                        background-color: White;
+                        border-bottom-style: dashed;
+                        border-bottom-color: #333;
+                        border-bottom-width: 1px;
+                        border-left-style: none;
+                        border-right-style: none;
+                    }
+
+                    .zm_tab tr {
+                        border-bottom-style: groove;
+                        border-bottom-color: #333;
+                        border-bottom-width: 1px;
+                        border-left-style: none;
+                        border-right-style: none;
+                    }
+
+                    .zm_tab .zm_tab_head td, .zm_tab th {
+                        background-color: #eee;
+                        color: Black;
+                        font-weight: 500;
+                        font-size: 14px;
+                        height: 16px;
+                        border-color: #bbb;
+                    }
+
+                .zm_title_01 {
+                    font-size: 18px;
+                    text-align: center;
+                    font-weight: 700;
+                    margin: 0 auto;
+                    width: 100%;
+                    color: Black;
+                }
+
+                .zm_title_02 {
+                    font-size: 15px;
+                    text-align: left;
+                    font-weight: 700;
+                    padding: 2px;
+                    color: Black;
+                    background-color: #eee;
+                }
+            </style>
+            <table cellpadding="0" cellspacing="0" style="border: solid 0px black; width: 99%;">
+                <tbody><tr>
+                    <td style="width: 80%; text-align: center;">
+                        <div align="center" class="zm_title_01">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;北京市旅游团队电子行程单</div>
+                    </td>
+                    <td style="width: 20%; text-align: center;">
+                        <br>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <div class="zm_title_02">团队信息</div>
+                        <div style="text-align: center;">
+                            <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0" style="border: solid 1px #555;">
+                                <tbody><tr height="1">
+                                    <td width="14%"></td>
+                                    <td width="16%"></td>
+                                    <td width="16%"></td>
+                                    <td width="18%"></td>
+                                    <td width="14%"></td>
+                                    <td width="22%"></td>
+                                </tr>
+                                <tr height="24">
+                                    <td align="right" class="tdblue" style="display: none">表单号：
+                                    </td>
+                                    <td align="left" style="display: none">
+                                        <span id="no" class="input_03"></span>
+                                    </td>
+                                    <td align="right" class="tdblue">团号：
+                                    </td>
+                                    <td align="left">
+                                        <span id="groupno" class="input_03">L-BJ03969-lwt-1102</span>
+                                    </td>
+                                    <td align="right" class="tdblue">
+                                        组团社名称：
+                                    </td>
+                                    <td align="left">
+                                        <span id="lxs_name" class="input_03">北京华旭旅游服务有限公司</span>
+                                    </td>
+                                    <td align="right" class="tdblue">团队类型：
+                                    </td>
+                                    <td align="left">
+                                        <span id="jt_lx" class="input_03">国内团</span>
+                                    </td>
+                                </tr>
+                                <tr height="24">
+                                    <td align="right" class="tdblue">
+                                        出团时间：
+                                    </td>
+                                    <td align="left">
+                                        <span id="jt_time" class="input_03">2026-11-02</span>
+                                    </td>
+                                    <td align="right" class="tdblue">接团地址：
+                                    </td>
+                                    <td align="left">
+                                        <span id="jt_addr" class="input_03">酒店</span>
+                                    </td>
+                                    <td align="right" class="tdblue">
+                                        客源国家、地区：
+                                    </td>
+                                    <td align="left">
+                                        <span id="jt_city" class="input_03">北京</span>
+                                    </td>
+                                </tr>
+                                <tr height="24">
+                                    <td align="right" class="tdblue">团队人数：
+                                    </td>
+                                    <td align="left">
+                                        <span id="rs_sum" class="input_03">40</span>
+                                    </td>
+                                    <td align="right" class="tdblue">成人数：
+                                    </td>
+                                    <td align="left">
+                                        <span id="rs_cr" class="input_03">40</span>
+                                    </td>
+                                    <td align="right" class="tdblue">
+                                        未成年人数：
+                                    </td>
+                                    <td align="left">
+                                        <span id="rs_xh" class="input_03">0</span>
+                                    </td>
+                                </tr>
+                                <tr height="24" style="display: none">
+                                    <td align="right" class="tdblue">旅游意外险：
+                                    </td>
+                                    <td align="left">
+
+                                        <span id="bx_yw" class="input_03">无</span>
+                                    </td>
+                                    <td align="right" class="tdblue">旅行社责任险：
+                                    </td>
+                                    <td align="left">
+                                        <span id="bx_zr">无</span>
+                                    </td>
+                                    <td align="right" class="tdblue">旅游统保险：
+                                    </td>
+                                    <td align="left">
+                                        <span id="bx_tb">无</span>
+                                    </td>
+                                </tr>
+                                <tr height="24">
+                                    <td align="right" class="tdblue">
+                                        地接社名称：
+                                    </td>
+                                    <td align="left" colspan="3">
+                                        <span id="zts_name" class="input_03">北京华旭旅游服务有限公司</span>
+                                    </td>
+                                </tr>
+                                <tr height="24">
+                                    <td align="right" class="tdblue">线路名称：
+                                    </td>
+                                    <td align="left">
+                                        <span id="xl_name" class="input_03">3+1行程-K</span>
+                                    </td>
+                                    <td align="right" class="tdblue">行程介绍：
+                                    </td>
+                                    <td align="left" colspan="3">
+                                        <span id="memo" class="input_03">北京线路游</span>
+                                    </td>
+                                </tr>
+
+                            </tbody></table>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <div class="zm_title_02">导游车辆信息</div>
+                        <div style="text-align: center;">
+                            <div>
+	<table class="zm_tab" cellspacing="0" rules="all" border="1" id="GridView3" style="border-collapse:collapse;">
+		<tbody><tr>
+			<th align="center" scope="col" style="width:3%;">序号</th><th scope="col">姓名</th><th scope="col">导游证号</th><th scope="col">汽车公司</th><th scope="col">汽车牌号</th><th scope="col">司机姓名</th>
+		</tr><tr>
+			<td align="center">
+                                            <span id="Label2">1</span>
+                                        </td><td style="width:6%;">刘伟涛</td><td style="width:10%;">RBZ7027B</td><td style="width:12%;">&nbsp;</td><td style="width:10%;">&nbsp;</td><td style="width:10%;">&nbsp;</td>
+		</tr>
+	</tbody></table>
+</div>
+                        </div>
+                        <div class="zm_title_02">非在京带队导游</div>
+                        <div style="text-align: center;">
+                            <div>
+	<table class="zm_tab" cellspacing="0" rules="all" border="1" id="GridView2" style="border-collapse:collapse;">
+		<tbody><tr>
+			<td>没有导游信息</td>
+		</tr>
+	</tbody></table>
+</div>
+                        </div>
+
+                        
+                        <div class="zm_title_02">行程信息</div>
+                        <div style="text-align: center;">
+
+                            <div>
+	<table class="zm_tab" cellspacing="0" rules="all" border="1" id="GridView1" style="border-collapse:collapse;">
+		<tbody><tr>
+			<th scope="col">序号</th><th scope="col">天数</th><th scope="col">到达时间</th><th scope="col">到达区县</th><th scope="col">类型</th><th scope="col">到达地点</th><th scope="col">停留时间(分钟)</th><th scope="col">活动详情</th>
+		</tr><tr>
+			<td style="width:6%;">1</td><td style="width:6%;">1</td><td style="width:6%;">09:00</td><td style="width:18%;">东城区</td><td style="width:18%;">游览A级景区</td><td style="width:18%;">故宫博物院</td><td style="width:18%;">60</td><td style="width:40%;">游览景点</td>
+		</tr><tr>
+			<td style="width:6%;">2</td><td style="width:6%;">1</td><td style="width:6%;">12:00</td><td style="width:18%;">东城区</td><td style="width:18%;">就餐</td><td style="width:18%;">团队餐厅用餐</td><td style="width:18%;">60</td><td style="width:40%;">团队餐厅用餐</td>
+		</tr><tr>
+			<td style="width:6%;">3</td><td style="width:6%;">1</td><td style="width:6%;">14:00</td><td style="width:18%;">东城区</td><td style="width:18%;">游览A级景区</td><td style="width:18%;">天坛公园</td><td style="width:18%;">60</td><td style="width:40%;">游览景点</td>
+		</tr><tr>
+			<td style="width:6%;">4</td><td style="width:6%;">1</td><td style="width:6%;">18:00</td><td style="width:18%;">西城区</td><td style="width:18%;">住宿</td><td style="width:18%;">时光漫步酒店北京天安门广场前门地铁站店</td><td style="width:18%;">60</td><td style="width:40%;">入住酒店、自由活动</td>
+		</tr><tr>
+			<td style="width:6%;">5</td><td style="width:6%;">2</td><td style="width:6%;">08:00</td><td style="width:18%;">东城区</td><td style="width:18%;">游览非A级景区</td><td style="width:18%;">雍和宫</td><td style="width:18%;">60</td><td style="width:40%;">游览景点</td>
+		</tr><tr>
+			<td style="width:6%;">6</td><td style="width:6%;">2</td><td style="width:6%;">10:00</td><td style="width:18%;">西城区</td><td style="width:18%;">游览A级景区</td><td style="width:18%;">恭王府景区</td><td style="width:18%;">60</td><td style="width:40%;">游览景点</td>
+		</tr><tr>
+			<td style="width:6%;">7</td><td style="width:6%;">2</td><td style="width:6%;">12:00</td><td style="width:18%;">东城区</td><td style="width:18%;">就餐</td><td style="width:18%;">团队餐厅用餐</td><td style="width:18%;">60</td><td style="width:40%;">团队餐厅用餐</td>
+		</tr><tr>
+			<td style="width:6%;">8</td><td style="width:6%;">2</td><td style="width:6%;">14:00</td><td style="width:18%;">西城区</td><td style="width:18%;">游览A级景区</td><td style="width:18%;">北京市西城区什刹海风景区</td><td style="width:18%;">60</td><td style="width:40%;">游览景点</td>
+		</tr><tr>
+			<td style="width:6%;">9</td><td style="width:6%;">2</td><td style="width:6%;">18:00</td><td style="width:18%;">西城区</td><td style="width:18%;">住宿</td><td style="width:18%;">时光漫步酒店北京天安门广场前门地铁站店</td><td style="width:18%;">60</td><td style="width:40%;">入住酒店、自由活动</td>
+		</tr><tr>
+			<td style="width:6%;">10</td><td style="width:6%;">3</td><td style="width:6%;">08:00</td><td style="width:18%;">延庆区</td><td style="width:18%;">游览A级景区</td><td style="width:18%;">八达岭长城</td><td style="width:18%;">60</td><td style="width:40%;">游览景点</td>
+		</tr><tr>
+			<td style="width:6%;">11</td><td style="width:6%;">3</td><td style="width:6%;">12:00</td><td style="width:18%;">延庆区</td><td style="width:18%;">就餐</td><td style="width:18%;">团队餐厅用餐</td><td style="width:18%;">60</td><td style="width:40%;">团队餐厅用餐</td>
+		</tr><tr>
+			<td style="width:6%;">12</td><td style="width:6%;">3</td><td style="width:6%;">14:00</td><td style="width:18%;">朝阳区</td><td style="width:18%;">游览A级景区</td><td style="width:18%;">北京奥林匹克公园</td><td style="width:18%;">60</td><td style="width:40%;">游览景点</td>
+		</tr><tr>
+			<td style="width:6%;">13</td><td style="width:6%;">3</td><td style="width:6%;">16:00</td><td style="width:18%;">东城区</td><td style="width:18%;">游览A级景区</td><td style="width:18%;">南锣鼓巷</td><td style="width:18%;">60</td><td style="width:40%;">游览景点</td>
+		</tr><tr>
+			<td style="width:6%;">14</td><td style="width:6%;">3</td><td style="width:6%;">18:00</td><td style="width:18%;">东城区</td><td style="width:18%;">住宿</td><td style="width:18%;">东方茂酒店簋街店</td><td style="width:18%;">60</td><td style="width:40%;">入住酒店、自由活动</td>
+		</tr><tr>
+			<td style="width:6%;">15</td><td style="width:6%;">4</td><td style="width:6%;">08:00</td><td style="width:18%;">海淀区</td><td style="width:18%;">游览A级景区</td><td style="width:18%;">北京市颐和园</td><td style="width:18%;">60</td><td style="width:40%;">景点游览</td>
+		</tr><tr>
+			<td style="width:6%;">16</td><td style="width:6%;">4</td><td style="width:6%;">10:00</td><td style="width:18%;">海淀区</td><td style="width:18%;">游览A级景区</td><td style="width:18%;">圆明园遗址公园</td><td style="width:18%;">60</td><td style="width:40%;">景点游览</td>
+		</tr><tr>
+			<td style="width:6%;">17</td><td style="width:6%;">4</td><td style="width:6%;">12:00</td><td style="width:18%;">海淀区</td><td style="width:18%;">就餐</td><td style="width:18%;">团队餐厅就餐</td><td style="width:18%;">60</td><td style="width:40%;">团队餐厅用餐</td>
+		</tr><tr>
+			<td style="width:6%;">18</td><td style="width:6%;">4</td><td style="width:6%;">14:00</td><td style="width:18%;">海淀区</td><td style="width:18%;">游览非A级景区</td><td style="width:18%;">清北打卡</td><td style="width:18%;">60</td><td style="width:40%;">游览景点</td>
+		</tr><tr>
+			<td style="width:6%;">19</td><td style="width:6%;">4</td><td style="width:6%;">18:00</td><td style="width:18%;">东城区</td><td style="width:18%;">住宿</td><td style="width:18%;">东方茂酒店簋街店</td><td style="width:18%;">60</td><td style="width:40%;">入住酒店、自由活动</td>
+		</tr>
+	</tbody></table>
+</div>
+                        </div>
+                    </td>
+                </tr>
+            </tbody></table>
+
+
+
+
+
+
+
+
+            
+        </div>
+
+    </div>
+    
+    <script>
+        var LODOP;
+        function go_print() {
+            LODOP = getLodop();
+
+            var strStyleCSS = "<link href='main.css' type='text/css' rel='stylesheet'/> <link href='ZM_style.css' type='text/css' rel='stylesheet'/>";
+            var strFormHtml = "<body>" + document.getElementById("Print_area").innerHTML + "</body>";
+            LODOP.PRINT_INIT("当地游行程");
+            // LODOP.SET_PRINT_PAGESIZE(1, 2100, 2970, "A4");
+            LODOP.ADD_PRINT_HTM(20, 20, "95%", "95%", strFormHtml);
+
+            //  LODOP.PREVIEW();	
+            LODOP.PREVIEW();
+
+        }
+        function go_print_sj() {
+            LODOP = getLodop();
+
+            var strStyleCSS = "<link href='main.css' type='text/css' rel='stylesheet'/> <link href='ZM_style.css' type='text/css' rel='stylesheet'/>";
+            var strFormHtml = "<body>" + document.getElementById("Print_area").innerHTML + "</body>";
+            LODOP.PRINT_INIT("当地游行程");
+            // LODOP.SET_PRINT_PAGESIZE(1, 2100, 2970, "A4");
+            LODOP.ADD_PRINT_HTM(20, 20, "95%", "95%", strFormHtml);
+
+            //  LODOP.PREVIEW();	
+            LODOP.PRINT_SETUP();
+
+        }
+    </script>
+
+
+    
+
+<script type="text/javascript">
+//<![CDATA[
+
+theForm.oldSubmit = theForm.submit;
+theForm.submit = WebForm_SaveScrollPositionSubmit;
+
+theForm.oldOnSubmit = theForm.onsubmit;
+theForm.onsubmit = WebForm_SaveScrollPositionOnSubmit;
+//]]>
+</script>
+</form>
+<script>
+    $(function () {
+        $.ajaxSetup({
+            cache: false
+        });
+    });
+</script>
+    
+
+
+</body></html>
